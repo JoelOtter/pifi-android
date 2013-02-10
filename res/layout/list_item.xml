@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@color/white"
+    android:padding="10dp"
+    android:clickable="true">
+    
+    <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation = "vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="7">
+                <TextView
+            android:id="@+id/queueTitle"
+            android:text="Bliss"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+                <TextView
+            android:id="@+id/queueArtist"
+            android:text="Muse"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+                <TextView
+            android:id="@+id/queueUser"
+            android:text="Joel Auterson"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" 
+            android:paddingTop="15dp"/>
+            </LinearLayout>
+            
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width ="50dp"
+            android:layout_height = "50dp"
+            android:src="@drawable/ic_up"
+            android:id="@+id/upBut"
+            android:clickable="false"
+            android:tint="@color/pressed_example"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/upText"
+            android:paddingLeft="22dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width ="50dp"
+            android:layout_height = "50dp"
+            android:src="@drawable/ic_down"
+            android:id="@+id/downBut"
+            android:clickable="false"
+            android:tint="@color/pressed_example"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/downText"
+            android:paddingLeft="22dp"/>
+    </LinearLayout>
+</LinearLayout>
